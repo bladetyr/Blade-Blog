@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="stylesheet" id="style" href="/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/src/sparkle.js" id="sparkle"></script>
+<script src="/src/toggle.js"></script>
+
+<script>
+    var yippee = new Audio('/audio/yippee-tbh.mp3');
+    var honk = new Audio('/audio/fnafHonk.mp3');
+</script>
+
+<title>YIPPEE</title>
+<body>
+    
+    <br>
+    <div class="thediv" style="text-align:center">
+        <h1>Blade's Informal Blog</h1>
+        <h3 style="margin:1%">Get silly !!!!</h3>
+        <ul class="nav">
+            <li class="navtext"><a href="index.html">Home</a></li>
+            <li class="navtext"><a href="https://bladetyr.github.io/">Business</a></li>
+            <li class="navtext"><a href="projects.html">Projects</a></li>
+            <li class="navtext"><a href="projects.html">Blog</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="thediv">
+        <h2>About Me</h2>
+        <p>Hi!! I'm not sure where I'm going to link this yet but you either stumbled upon it somehow or I gave it to you. Either way: welcome :]</p>
+        <p>
+            I'm Blade, I use she/her pronouns, and I'm in my 20s.
+        </p>
+        <p>This is my less-presentable site where I'll talk about stuff I'm up to (or complain about it). 
+            This can range from how much I hate setting up Docker on a new machine to why I think playing healer in FF14 isn't <i>that</i> bad.</p>
+        <br>
+        <h2>Interests</h2>
+        <p>I like a lot of stuff :O but if I had to name things off the top of my head:</p>
+        <ul>
+            <li>Nintendo Homebrew Stuff</li>
+            <li>Systems / Embedded Programming</li>
+            <li>JRPGs (Bravely Default <3)</li>
+            <li>Splatoon</li>
+            <li>Long Video Essays On Things I've Never Heard Of</li>
+            <li>Art</li>
+        </ul>
+    </div>
+    <br>
+    <div class="thediv">
+        <p>HUJDHKRVF</p>
+    </div>
+
+    <!-- LEFT SIDE NAV STUFF -->
+    <img src="/images/her.jpg" class="normalimg" 
+    onclick="honk.play();"
+    alt="Icon of Kaede Akamatsu from Danganronpa V3. The camera is zoomed in on her face and she is looking at the viewer.">
+    <div style="margin: 5%; width: 15%; margin-top: 2%; position: fixed; top: 37%;">
+        <h2>RESOURCES:</h2>
+    </div>
+    <div class="thediv" style="margin: 5%; width: 15%; margin-top: 2%; position: fixed; top: 43%;">
+        <ul>
+            <li><a href="https://sadgrl.online/webmastery/">Sadgirl Webmastery</a></li>
+            <li><a href="https://pride.codes/">Pride Code Decorations</a></li>
+            <li><a href="https://www.snazzyspace.com/tumblr/mouse-sparkles.php">Mouse Sparkle Codes</a></li>
+            <li><a href="https://wiki.osdev.org/Creating_an_Operating_System">Making An OS</a></li>
+            <li><a href="https://www.copetti.org/writings/consoles/nintendo-3ds/">3DS Architecture</a></li>
+            <li><a href="https://www.tumblr.com/mortuarybees/675909670359138304?source=share">Make Stuff, Always!</a></li>
+        </ul>
+    </div>
+
+    <!-- RIGHT SIDE STUFF -->
+    <div style="margin: 5%; width: 15%; margin-top: 2%; margin-left: 79%; position: fixed; top: 10%;">
+        <h2>EASY VIEW:</h2>
+    </div>
+    <div class="thediv" style="margin: 5%; width: 15%; margin-top: 2%;  margin-left: 79%; position: fixed; top: 16%;">
+        <input onclick="swapStyleSheet()" type="checkbox" id="toggle">
+        Make It Plain
+        <br>
+        <input onclick="die()" type="checkbox" id="die">
+        I Hate Red
+        <br>
+        <input onclick="anime()" type="checkbox" id="linux">
+        I Use Linux
+    </div>
+    <div style="margin: 5%; width: 15%; margin-top: 2%; margin-left: 79%; position: fixed; top: 25%; color: #fee3e6;">
+        <p id="dieText"></p>
+    </div>
+    <img style ="margin: 5%; width: 15%; margin-top: 2%; margin-left: 79%; position: fixed; top: 60%;" src="/images/Tbh.png"
+    onclick="yippee.play();" 
+    alt="The tbh creature. It is a small white creature with big eyes and 4 legs, meant to be lighthearted and kind of cute. Often used in online memes with a 'YIPPEE!' sound effect.">
+
+</body>

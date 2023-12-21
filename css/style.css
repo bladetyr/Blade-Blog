@@ -1,0 +1,74 @@
+body {
+    background-image: url('/images/sparkle.png');
+    background-repeat: repeat;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #ea0927;
+  }
+
+h1 {
+    border-bottom: 4px #ea0927 solid; 
+    width:45%;
+    margin:auto;
+}
+
+h2 {
+    padding-left: 2%;
+    color: #fee3e6;
+}
+
+p {
+    padding-left: 2%;
+}
+
+.header {
+    text-align: center;
+}
+
+.thediv {
+    background-color: #090909;
+    border-radius: 10px;
+    border: 3px solid #bb152b;
+    color: #fee3e6;
+    box-shadow: 0 0 10px #bb152b;
+    width: 50%;
+    margin: auto;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #030303;
+}
+
+.navtext { 
+  text-decoration: none;
+  padding: 14px;
+  font-size: 18px;
+  display: inline;
+  font-family: monospace;
+  color: #fee3e6;
+}
+
+.navtext:hover {
+  background-color: #bb152b;
+}
+
+.normalimg {
+    border: 5px solid #ff576d;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ed0a28;
+    margin-left: 5%;
+    margin-top: 2%;
+    position: fixed;
+    top: 6%;
+    width: 13%;
+}

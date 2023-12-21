@@ -1,0 +1,73 @@
+body {
+    background-image: url('/images/sparkleShadow.png');
+    background-repeat: repeat;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #09ea14;
+  }
+
+h1 {
+    border-bottom: 4px #09ea14 solid; 
+    width:45%;
+    margin:auto;
+}
+
+h2 {
+    padding-left: 2%;
+    color: #fee3e6;
+}
+
+p {
+    padding-left: 2%;
+}
+
+.header {
+    text-align: center;
+}
+
+.thediv {
+    background-color: #090909;
+    border-radius: 10px;
+    border: 3px solid #23bb15;
+    color: #fee3e6;
+    box-shadow: 0 0 10px #23bb15;
+    width: 50%;
+    margin: auto;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #030303;
+}
+
+.navtext { 
+  padding: 14px;
+  font-size: 18px;
+  display: inline;
+  font-family: monospace;
+  color: #fee3e6;
+}
+
+.navtext:hover {
+  background-color: #23bb15;
+}
+
+.normalimg {
+    border: 5px solid #6bff57;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #09ea14;
+    margin-left: 5%;
+    margin-top: 2%;
+    position: fixed;
+    top: 6%;
+    width: 13%;
+}

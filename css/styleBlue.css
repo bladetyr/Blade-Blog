@@ -1,0 +1,73 @@
+body {
+    background-image: url('/images/sparkleBlue.png');
+    background-repeat: repeat;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #3d09ea;
+  }
+
+h1 {
+    border-bottom: 4px #3d09ea solid; 
+    width:45%;
+    margin:auto;
+}
+
+h2 {
+    padding-left: 2%;
+    color: #fee3e6;
+}
+
+p {
+    padding-left: 2%;
+}
+
+.header {
+    text-align: center;
+}
+
+.thediv {
+    background-color: #090909;
+    border-radius: 10px;
+    border: 3px solid #4115bb;
+    color: #fee3e6;
+    box-shadow: 0 0 10px #4115bb;
+    width: 50%;
+    margin: auto;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #030303;
+}
+
+.navtext { 
+  padding: 14px;
+  font-size: 18px;
+  display: inline;
+  font-family: monospace;
+  color: #fee3e6;
+}
+
+.navtext:hover {
+  background-color: #4115bb;
+}
+
+.normalimg {
+    border: 5px solid #481dbd;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #4115bb;
+    margin-left: 5%;
+    margin-top: 2%;
+    position: fixed;
+    top: 6%;
+    width: 13%;
+}

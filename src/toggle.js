@@ -36,6 +36,6 @@ function anime() {
         document.getElementById("dieText").innerText = "sudo cat /css/styleLinux.css";
     }else{
         document.getElementById("style").setAttribute('href', "/css/style.css");
-        document.getElementById("dieText").innerText = "h";
+        document.getElementById("dieText").innerText = "";
     }
 }

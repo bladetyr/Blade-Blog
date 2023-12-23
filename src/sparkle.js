@@ -1,3 +1,19 @@
+//HAD TO PORT THIS OVER FROM TOGGLE.JS BECAUSE WAITING UNTIL ONLOAD BREAKS THE SPARKLE SCRIPT
+//IT USES LOCALSTORAGE SO NO NEED TO IMPORT TBH
+function onReloadCheck(){
+  if(localStorage.getItem("theme") == "blue"){
+      document.getElementById("die").checked = true;
+      document.getElementById("dieText").innerText = "Red is cool :[";
+  }else if(localStorage.getItem("theme") == "plain"){
+      document.getElementById("toggle").checked = true;
+  }else if(localStorage.getItem("theme") == "linux"){
+     document.getElementById("linux").checked = true;
+     document.getElementById("dieText").innerText = "sudo cat /css/styleLinux.css";
+  }
+  return 0;
+}
+//END OF MY FUNCTION
+
 var colour="#FFFFFF";
 //VARIABLES I ADDED
 var cIndex = 0;
@@ -31,6 +47,7 @@ var tinyy=new Array();
 var tinyv=new Array();
 
 window.onload=function() { if (document.getElementById) {
+  onReloadCheck();
   var i, rats, rlef, rdow;
   for (var i=0; i<sparkles; i++) {
     var rats=createDiv(3, 3);

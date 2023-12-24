@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="stylesheet" id="style" href="/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/src/sparkle.js" id="sparkle"></script>
+<script src="/src/toggle.js"></script>
+
+<script>
+    onReloadTheme();
+    var yippee = new Audio('http://docs.google.com/uc?export=open&id=1BrzFUIBk3Fc-uJyuEPmUKk2ho3_yeVcI');
+    var honk = new Audio('http://docs.google.com/uc?export=open&id=10D7S5MRtzrVp136-kwAUn8LB4ir38MH1');
+</script>
+
+<title>YIPPEE</title>
+<body>
+    <br>
+    <div class="thediv" style="text-align:center">
+        <h1>Blade's Informal Blog</h1>
+        <h3 style="margin:1%">Get silly !!!!</h3>
+        <ul class="nav">
+            <li class="navtext"><a href="/index.html">Home</a></li>
+            <li class="navtext"><a href="https://bladetyr.github.io/">Business</a></li>
+            <li class="navtext"><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <br>
+    <!--POST CONTENT START-->
+    <div class="thediv">
+        <h2>Deploying to Neocities via GitHub Actions</h2>
+        <h3>12/23/2023</h3>
+        <p>Wanted to write up a small tutorial for anyone not using node. Based on <a href="https://github.com/marketplace/actions/deploy-to-neocities">this tutorial</a>,
+        but for people not using NodeJS to make their site.
+        </p>
+        <p>
+            You need to do 3 main things:
+            <ul>
+                <li>Make a folder to put your website stuff in (dist_dir)</li>
+                <li>Make a folder to put in your deploy.yml file (.github/workflows - 2 folders)</li>
+                <li>Get an API Token for your neocities site</li>
+            </ul>
+        </p>
+        <h3>Making a Folder for your Website Stuff</h3>
+        <p>
+            I assume you have somewhere you've been writing your site if you want to deploy from GitHub, so go there.
+            I made this one using VSCode, so I'll explain how to do it in there. Make a folder, title it whatever you want (mine is called
+            'dist_dir'), and then put everything related to your site in that folder. This will be everything that gets pushed to Neocities.
+        </p>
+        <p>
+            We do this because we don't want all the git stuff getting pushed to Neocities. We just want our website stuff!
+        </p>
+        <h3>Getting an API Token</h3>
+        <p>
+            Go to your neocities account, Account Settings > Manage Site Settings > API > Generate API Key. Copy this and DO NOT PUT
+            IT ANYWHERE IN YOUR CODE. ONLY YOU SHOULD HAVE THIS. DON'T PUSH IT TO YOUR REPO!!
+        </p>
+        <p>
+            Go to your GitHub repo > Settings > Secrets And Variables > Actions. Make a new secret, name it 'NEOCITIES_API_TOKEN' and paste your secret in the box below.
+            Save it.
+        </p>
+        <h3>Making A deploy.yml File</h3>
+        <p>
+            Okay, so for this one, go back to your favorite code editor. Make a folder called '.github', then in that folder, make another folder
+            called 'workflows'. In the workflows folder, made a file called 'deploy.yml'. It doesn't <i>have</i> to be called deploy.yml, it can 
+            be anything.yml, but I called mine deploy.yml. The example file in the linked tutorial uses NodeJS, so we're going to use an edited version 
+            I made. Here is <a href="https://github.com/bladetyr/Blade-Blog/blob/main/.github/workflows/deploy.yml">my deploy.yml</a>. The only thing you have to do 
+            is change the "dist_dir:" line (the one at the end) to the name of your website stuff folder. Mine is just 'dist_dir' again, but if yours 
+            is called 'mystuff', then the last line would look like "dist_dir: mystuff"!
+        </p>
+        <h3>Push Your Changes to GitHub</h3>
+        <p>
+            Alright, now push all of your changes to GitHub and it should start building! If you go to your GitHub repo > Actions > Deploy to neocities (on the left side of the screen),
+             you should see it building (yellow) or built (green). If you go to your neocities url, you should see your site appear there.
+        </p>
+        <p>
+            Your website will rebuild every time you push to that repo, so, now you don't have to do anything to update your neocities site other than push your code :D if you have any questions, 
+            you can message me on Discord. My username is blade.py
+        </p>
+    </div>
+
+    <!-- LEFT SIDE NAV STUFF -->
+    <img src="/images/pikapi.png" class="normalimg" 
+    onclick="honk.play();"
+    alt="Icon of Pikachu and Togepi. Pikachu is on a boat and Togepi is attached to a rope as they both float down a river.">
+    <div style="margin: 5%; width: 15%; margin-top: 2%; position: fixed; top: 37%;">
+        <h2>RESOURCES:</h2>
+    </div>
+    <div class="thediv" style="margin: 5%; width: 15%; margin-top: 2%; position: fixed; top: 43%;">
+        <ul>
+            <li><a href="https://sadgrl.online/webmastery/">Sadgirl Webmastery</a></li>
+            <li><a href="https://pride.codes/">Pride Code Decorations</a></li>
+            <li><a href="https://www.snazzyspace.com/tumblr/mouse-sparkles.php">Mouse Sparkle Codes</a></li>
+            <li><a href="https://wiki.osdev.org/Creating_an_Operating_System">Making An OS</a></li>
+            <li><a href="https://www.copetti.org/writings/consoles/nintendo-3ds/">3DS Architecture</a></li>
+            <li><a href="https://www.tumblr.com/mortuarybees/675909670359138304?source=share">Make Stuff, Always!</a></li>
+        </ul>
+    </div>
+
+    <!-- RIGHT SIDE STUFF -->
+    <div style="margin: 5%; width: 15%; margin-top: 2%; margin-left: 79%; position: fixed; top: 10%;">
+        <h2>EASY VIEW:</h2>
+    </div>
+    <div class="thediv" style="margin: 5%; width: 15%; margin-top: 2%;  margin-left: 79%; position: fixed; top: 16%;">
+        <input onclick="swapStyleSheet()" type="checkbox" id="toggle">
+        Make It Plain
+        <br>
+        <input onclick="die()" type="checkbox" id="die">
+        I Hate Red
+        <br>
+        <input onclick="anime()" type="checkbox" id="linux">
+        I Use Linux
+    </div>
+    <div style="margin: 5%; width: 15%; margin-top: 2%; margin-left: 79%; position: fixed; top: 25%; color: #fee3e6;">
+        <p id="dieText"></p>
+    </div>
+    <img style ="margin: 5%; width: 15%; margin-top: 2%; margin-left: 79%; position: fixed; top: 60%;" src="/images/Tbh.png"
+    onclick="yippee.play();" 
+    alt="The tbh creature. It is a small white creature with big eyes and 4 legs, meant to be lighthearted and kind of cute. Often used in online memes with a 'YIPPEE!' sound effect.">
+
+</body>

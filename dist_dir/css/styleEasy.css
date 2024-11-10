@@ -77,3 +77,10 @@ p {
     top: 6%;
     width: 13%;
 }
+
+.embedimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #ff576d;
+}

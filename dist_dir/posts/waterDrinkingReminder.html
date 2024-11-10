@@ -18,38 +18,38 @@
         <h1>Blade's Informal Blog</h1>
         <h3 style="margin:1%">Get silly !!!!</h3>
         <ul class="nav">
-            <li class="navtext"><a href="index.html">Home</a></li>
+            <li class="navtext"><a href="/index.html">Home</a></li>
             <li class="navtext"><a href="https://bladetyr.github.io/">Business</a></li>
-            <li class="navtext"><a href="blog.html">Blog</a></li>
+            <li class="navtext"><a href="/blog.html">Blog</a></li>
         </ul>
     </div>
     <br>
+    <!--POST CONTENT START-->
     <div class="thediv">
-        <h2>About Me</h2>
-        <p>Hi!! I'm not sure where I'm going to link this yet but you either stumbled upon it somehow or I gave it to you. Either way: welcome :]</p>
-        <p>
-            I'm Blade, I use she/her pronouns, and I'm in my 20s. I'm a junior dev learning stuff atm!
+        <h2>Water Drinking Reminder Machine (WDRM)</h2>
+        <p>Wow, long time no see. I've been very busy graduating college, moving, and starting a new job. I haven't done much coding outside of work, but it feels good to be back B].
+            Anyway, this was one of my first real hardware experiences, but I've had this idea for a while. I was gifted a bunch of random components and an
+            arduino board so it was time to bring this to reality.
         </p>
-        <p>This is my less-presentable site where I'll talk about stuff I'm up to (or complain about it). 
-            This can range from how much I hate setting up Docker on a new machine to why I think playing healer in FF14 isn't <i>that</i> bad.</p>
-    </div>
-    <br>
-    <div class="thediv">
-        <h2>Interests</h2>
-        <p>I like a lot of stuff :O but if I had to name things off the top of my head:</p>
-        <ul>
-            <li>Nintendo Homebrew Stuff</li>
-            <li>Systems / Embedded Programming</li>
-            <li>Robotics</li>
-            <li>JRPGs (Bravely Default <3)</li>
-            <li>Splatoon</li>
-            <li>Long Video Essays On Things I've Never Heard Of</li>
-            <li>Art</li>
-        </ul>
-    </div>
-    <br>
-    <div class="thediv">
-        <p>Note to self: dump site stats here</p>
+        <p>The idea behind it is that I continuously forget to drink water. Even after setting an alarm, it'll go off, and then
+            I'll say 'oh, let me finish what I'm doing real quick' only to forget right after I finish my task and never actually go do it.
+            This machine will act like an alarm but will only turn off if I prove that I have water. To do this, I have a water sensor attached
+            to an arduino uno:
+        </p>
+        <img src="/images/water sensor.png" class="embedimg">
+        <p>Out of the components I was given, the only thing that made noise was this buzzer:</p>
+        <img src="/images/buzzer.png" class="embedimg">
+        <p>So this will have to do. I think it's annoying enough without being too loud to annoy my roommates anyway, which is probably better
+            than a louder alternative. Once the buzzer is going off, and the water sensor is triggered, the buzzer will sleep for an hour before going off again.
+            Here is a video of it in action:
+        </p>
+        <iframe width="560" height="315" class="embedimg" src="https://www.youtube.com/embed/jVCC7g6RNrM?si=cBe6kibKHr0-7rwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Next steps is probably getting a longer arduino cord and maybe figuring out how to 3D print a home for it. Otherwise, it is confined
+            to only being used when I'm on my laptop and can plug it in, which is less convenient than connecting it to a powerstrip and on my desk.
+        </p>
+        <p>The code for this was pretty basic, but I haven't touched an arduino since 10th grade, so this was still pretty new to me! Either way,
+            it works, and once I figure out where to set it up: headaches will be gone forever !!!
+        </p>
     </div>
 
     <!-- LEFT SIDE NAV STUFF -->
